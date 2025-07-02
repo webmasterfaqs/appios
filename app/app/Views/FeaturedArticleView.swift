@@ -45,7 +45,6 @@ struct FeaturedArticleView: View {
 
 #Preview {
     FeaturedArticleView(article: FeaturedArticle(
-<<<<<<< HEAD
         title: "Example",
         summary: "summary",
         content: "content",
@@ -54,7 +53,5 @@ struct FeaturedArticleView: View {
         url: "https://example.com",
         imageUrl: "",
         isLive: true))
-=======
         title: "Example", summary: "summary", source: "source", publishedDate: "1h", url: "https://example.com", imageUrl: "", isLive: true))
->>>>>>> origin/main
 }
