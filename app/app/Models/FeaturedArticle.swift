@@ -6,6 +6,8 @@ struct FeaturedArticle: Identifiable {
     let summary: String
     let source: String
     let publishedDate: String
+    /// Web URL for the feature article
+    let url: String
     let imageUrl: String
     let isLive: Bool
 }
