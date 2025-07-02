@@ -4,7 +4,8 @@ struct FeaturedArticleView: View {
     let article: FeaturedArticle
 
     var body: some View {
-        VStack(alignment: .leading) {
+        Link(destination: URL(string: article.url)!) {
+            VStack(alignment: .leading) {
             AsyncImage(url: URL(string: article.imageUrl)) { image in
                 image.resizable().aspectRatio(contentMode: .fill)
             } placeholder: {
@@ -38,6 +39,7 @@ struct FeaturedArticleView: View {
             .padding(.horizontal)
             .padding(.bottom)
         }
+        }
     }
 }
 
@@ -45,9 +47,11 @@ struct FeaturedArticleView: View {
     FeaturedArticleView(article: FeaturedArticle(
         title: "Example",
         summary: "summary",
+        content: "content",
         source: "source",
         publishedDate: "1h",
         url: "https://example.com",
         imageUrl: "",
         isLive: true))
+        title: "Example", summary: "summary", source: "source", publishedDate: "1h", url: "https://example.com", imageUrl: "", isLive: true))
 }
