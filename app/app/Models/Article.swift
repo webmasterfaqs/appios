@@ -6,6 +6,8 @@ struct Article: Identifiable {
     let summary: String
     let source: String
     let publishedDate: String
+    /// Web URL for the full article
+    let url: String
     let imageUrl: String?
     let isLive: Bool
     let isTrending: Bool

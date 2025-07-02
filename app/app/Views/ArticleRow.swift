@@ -5,8 +5,9 @@ struct ArticleRow: View {
     let article: Article
 
     var body: some View {
-        HStack(alignment: .top, spacing: 12) {
-            VStack(alignment: .leading, spacing: 4) {
+        Link(destination: URL(string: article.url)!) {
+            HStack(alignment: .top, spacing: 12) {
+                VStack(alignment: .leading, spacing: 4) {
                 HStack(spacing: 4) {
                     if article.isLive {
                         Text("LIVE")
@@ -52,5 +53,6 @@ struct ArticleRow: View {
             }
         }
         .padding(.vertical, 8)
+        }
     }
 }
