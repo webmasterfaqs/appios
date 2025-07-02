@@ -43,5 +43,11 @@ struct FeaturedArticleView: View {
 
 #Preview {
     FeaturedArticleView(article: FeaturedArticle(
-        title: "Example", summary: "summary", source: "source", publishedDate: "1h", imageUrl: "", isLive: true))
+        title: "Example",
+        summary: "summary",
+        source: "source",
+        publishedDate: "1h",
+        url: "https://example.com",
+        imageUrl: "",
+        isLive: true))
 }
