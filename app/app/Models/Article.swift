@@ -8,8 +8,6 @@ struct Article: Identifiable {
     let content: String
     let source: String
     let publishedDate: String
-    /// Full text content displayed inside the app
-    let content: String
     /// Web URL for the original article source
     let url: String
     let imageUrl: String?
