@@ -48,6 +48,7 @@ struct FeaturedArticleView_Previews: PreviewProvider {
         FeaturedArticleView(article: FeaturedArticle(
             title: "Example",
             summary: "summary",
+            content: "content",
             source: "source",
             publishedDate: "1h",
             url: "https://example.com",

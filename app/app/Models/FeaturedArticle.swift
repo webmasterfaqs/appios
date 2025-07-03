@@ -4,7 +4,7 @@ struct FeaturedArticle: Identifiable {
     let id = UUID()
     let title: String
     let summary: String
-    /// Full text of the article
+    /// Full text content displayed in the detail view
     let content: String
     let source: String
     let publishedDate: String
