@@ -18,6 +18,8 @@ struct SectionHeaderView: View {
     }
 }
 
-#Preview {
-    SectionHeaderView(title: "Latest News", subtitle: "Stay updated")
+struct SectionHeaderView_Previews: PreviewProvider {
+    static var previews: some View {
+        SectionHeaderView(title: "Latest News", subtitle: "Stay updated")
+    }
 }

@@ -43,15 +43,16 @@ struct FeaturedArticleView: View {
     }
 }
 
-#Preview {
-    FeaturedArticleView(article: FeaturedArticle(
-        title: "Example",
-        summary: "summary",
-        content: "content",
-        source: "source",
-        publishedDate: "1h",
-        url: "https://example.com",
-        imageUrl: "",
-        isLive: true))
-        title: "Example", summary: "summary", source: "source", publishedDate: "1h", url: "https://example.com", imageUrl: "", isLive: true))
+struct FeaturedArticleView_Previews: PreviewProvider {
+    static var previews: some View {
+        FeaturedArticleView(article: FeaturedArticle(
+            title: "Example",
+            summary: "summary",
+            source: "source",
+            publishedDate: "1h",
+            url: "https://example.com",
+            imageUrl: "",
+            isLive: true
+        ))
+    }
 }
