@@ -4,7 +4,7 @@ struct Article: Identifiable {
     let id: Int
     let title: String
     let summary: String
-    /// Full text of the article
+    /// Full text content displayed inside the app
     let content: String
     let source: String
     let publishedDate: String
