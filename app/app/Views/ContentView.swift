@@ -33,14 +33,32 @@ struct ContentView: View {
                 CategoryTabs(selected: $viewModel.selectedCategory)
                     .listRowInsets(EdgeInsets())
                 if viewModel.selectedCategory == .top {
-                    FeaturedArticleView(article: viewModel.featuredArticle)
-                        .listRowInsets(EdgeInsets())
+                    NavigationLink {
+                        ArticleDetailView(
+                            title: viewModel.featuredArticle.title,
+                            content: viewModel.featuredArticle.content,
+                            source: viewModel.featuredArticle.source,
+                            url: viewModel.featuredArticle.url
+                        )
+                    } label: {
+                        FeaturedArticleView(article: viewModel.featuredArticle)
+                    }
+                    .listRowInsets(EdgeInsets())
                     SectionHeaderView(title: "Latest News", subtitle: "Stay updated with breaking stories")
                         .listRowInsets(EdgeInsets())
                 }
                 ForEach(viewModel.articlesByCategory[viewModel.selectedCategory] ?? []) { article in
-                    ArticleRow(article: article)
-                        .listRowInsets(EdgeInsets())
+                    NavigationLink {
+                        ArticleDetailView(
+                            title: article.title,
+                            content: article.content,
+                            source: article.source,
+                            url: article.url
+                        )
+                    } label: {
+                        ArticleRow(article: article)
+                    }
+                    .listRowInsets(EdgeInsets())
                 }
             }
             .listStyle(.plain)

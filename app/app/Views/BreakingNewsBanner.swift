@@ -19,6 +19,8 @@ struct BreakingNewsBanner: View {
     }
 }
 
-#Preview {
-    BreakingNewsBanner(message: "Supreme Court to hear landmark climate case next month")
+struct BreakingNewsBanner_Previews: PreviewProvider {
+    static var previews: some View {
+        BreakingNewsBanner(message: "Supreme Court to hear landmark climate case next month")
+    }
 }

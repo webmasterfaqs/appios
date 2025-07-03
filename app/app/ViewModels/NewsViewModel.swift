@@ -14,8 +14,10 @@ class NewsViewModel: ObservableObject {
         featuredArticle = FeaturedArticle(
             title: "Global Climate Summit Reaches Historic Agreement on Carbon Emissions",
             summary: "World leaders from 195 countries have reached a groundbreaking consensus on reducing carbon emissions by 50% over the next decade, marking the most significant climate action in international history.",
+            content: "Detailed coverage of the climate summit goes here. It highlights the major agreements and reactions from leaders across the globe.",
             source: "The Times",
             publishedDate: "2 hours ago",
+            url: "https://example.com/global-climate-summit",
             imageUrl: "https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?w=800&h=400&fit=crop",
             isLive: true
         )
@@ -26,8 +28,10 @@ class NewsViewModel: ObservableObject {
                     id: 1,
                     title: "Tech Giants Face New Regulatory Challenges in European Markets",
                     summary: "New legislation targeting major technology companies could reshape the digital landscape across Europe, with potential impacts on global operations.",
+                    content: "Full text for the tech giants article goes here. It elaborates on the regulatory pressures facing large technology firms in European countries.",
                     source: "Business Desk",
                     publishedDate: "4 hours ago",
+                    url: "https://example.com/tech-giants-europe",
                     imageUrl: "https://images.unsplash.com/photo-1560472355-536de3962603?w=400&h=300&fit=crop",
                     isLive: false,
                     isTrending: true
@@ -36,8 +40,10 @@ class NewsViewModel: ObservableObject {
                     id: 2,
                     title: "Breakthrough in Quantum Computing Promises Revolutionary Changes",
                     summary: "Scientists at leading research institutions have achieved a major milestone in quantum computing that could accelerate technological advancement.",
+                    content: "In-depth information about quantum computing advancements and their potential impact on industry.",
                     source: "Science",
                     publishedDate: "6 hours ago",
+                    url: "https://example.com/quantum-computing-breakthrough",
                     imageUrl: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop",
                     isLive: false,
                     isTrending: false
@@ -46,8 +52,10 @@ class NewsViewModel: ObservableObject {
                     id: 3,
                     title: "Global Food Security Initiative Launches Across 50 Countries",
                     summary: "A comprehensive program aimed at addressing food insecurity worldwide has been launched with support from international organizations and governments.",
+                    content: "Background details about the food security initiative and its expected outcomes are discussed here.",
                     source: "World News",
                     publishedDate: "8 hours ago",
+                    url: "https://example.com/global-food-security",
                     imageUrl: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&h=300&fit=crop",
                     isLive: false,
                     isTrending: false
@@ -58,8 +66,10 @@ class NewsViewModel: ObservableObject {
                     id: 4,
                     title: "European Union Announces New Trade Partnership with Southeast Asia",
                     summary: "Historic agreement aims to boost economic cooperation and sustainable development across regions.",
+                    content: "An expanded article describing the terms of the EU's new partnership with Southeast Asian nations.",
                     source: "World News",
                     publishedDate: "3 hours ago",
+                    url: "https://example.com/eu-trade-partnership",
                     imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop",
                     isLive: false,
                     isTrending: false
@@ -68,8 +78,10 @@ class NewsViewModel: ObservableObject {
                     id: 5,
                     title: "Antarctic Research Station Reports Record Ice Sheet Changes",
                     summary: "Scientists document unprecedented changes in polar ice formations with global implications.",
+                    content: "A detailed report on observations from the Antarctic research station and the significance for climate change studies.",
                     source: "Science",
                     publishedDate: "5 hours ago",
+                    url: "https://example.com/antarctic-ice-changes",
                     imageUrl: nil,
                     isLive: false,
                     isTrending: false
@@ -80,8 +92,10 @@ class NewsViewModel: ObservableObject {
                     id: 6,
                     title: "Congressional Leaders Reach Bipartisan Infrastructure Agreement",
                     summary: "Landmark legislation promises major investments in clean energy and digital connectivity.",
+                    content: "Key provisions of the infrastructure bill and commentary from political analysts are outlined in this piece.",
                     source: "Politics",
                     publishedDate: "2 hours ago",
+                    url: "https://example.com/infrastructure-agreement",
                     imageUrl: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=400&h=300&fit=crop",
                     isLive: false,
                     isTrending: false
@@ -92,8 +106,10 @@ class NewsViewModel: ObservableObject {
                     id: 7,
                     title: "New Gene Therapy Shows Promise for Treating Rare Genetic Disorders",
                     summary: "Clinical trials demonstrate significant improvements in patient outcomes using innovative treatment approach.",
+                    content: "The article delves into how gene therapy techniques are evolving and what it means for patients.",
                     source: "Health & Science",
                     publishedDate: "4 hours ago",
+                    url: "https://example.com/gene-therapy-promise",
                     imageUrl: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop",
                     isLive: false,
                     isTrending: false
@@ -104,8 +120,10 @@ class NewsViewModel: ObservableObject {
                     id: 8,
                     title: "AI Breakthrough: New Model Achieves Human-Level Performance in Complex Reasoning",
                     summary: "Latest artificial intelligence system demonstrates unprecedented capabilities in problem-solving and analysis.",
+                    content: "More details on the capabilities of the AI model and expert opinions on future applications.",
                     source: "Technology",
                     publishedDate: "1 hour ago",
+                    url: "https://example.com/ai-breakthrough",
                     imageUrl: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=300&fit=crop",
                     isLive: true,
                     isTrending: false
